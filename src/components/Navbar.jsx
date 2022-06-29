@@ -15,7 +15,7 @@ function Navbar() {
         <img src={Logo} alt="logo" style={{ width: "60px" }} />
       </div>
 
-      <ul className="hidden md:flex ">
+      <ul className="hidden md:flex">
         <li className=" hover:border-b-2 border-pink-600 ">
           <Link to="home" smooth={true} duration={500}>
             Home
