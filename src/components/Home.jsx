@@ -1,6 +1,7 @@
 import React from "react";
 import { HiArrowNarrowRight } from "react-icons/hi";
 import { Link } from "react-scroll";
+import Typewriter from "typewriter-effect";
 
 function Home() {
   return (
@@ -12,7 +13,23 @@ function Home() {
           Shiva Karka
         </h1>
         <h2 className="text-4xl sm:text-7xl font-bold text-[#8892b0]">
-          I'm a Front End Developer.
+          <Typewriter
+            onInit={(typewriter) => {
+              typewriter
+                .typeString(`I'm a Front End Developer.`)
+                .pauseFor(2500)
+                .deleteAll();
+              typewriter
+                .typeString(`I build amazing websites.`)
+                .pauseFor(2500)
+                .deleteAll()
+                .start();
+            }}
+            options={{
+              autoStart: true,
+              loop: true,
+            }}
+          />
         </h2>
         <p className="text-[#8892b0] py-4 max-w-[700px]">
           I am a web developer specializing in building exceptional digital
