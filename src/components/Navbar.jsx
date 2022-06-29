@@ -10,38 +10,38 @@ function Navbar() {
   const handleClick = () => setNav(!nav);
 
   return (
-    <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300">
+    <div className=" fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300">
       <div>
         <img src={Logo} alt="logo" style={{ width: "60px" }} />
       </div>
 
-      <ul className="hidden md:flex">
-        <li>
+      <ul className="hidden md:flex ">
+        <li className=" hover:border-b-2 border-pink-600 ">
           <Link to="home" smooth={true} duration={500}>
             Home
           </Link>
         </li>
-        <li>
+        <li className=" hover:border-b-2 border-pink-600 ">
           <Link to="about" smooth={true} duration={500}>
             About
           </Link>
         </li>
-        <li>
+        <li className=" hover:border-b-2 border-pink-600 ">
           <Link to="skills" smooth={true} duration={500}>
             Skills
           </Link>
         </li>
-        <li>
+        <li className=" hover:border-b-2 border-pink-600 ">
           <Link to="projects" smooth={true} duration={500}>
             Projects
           </Link>
         </li>
-        <li>
+        <li className=" hover:border-b-2 border-pink-600">
           <Link to="experience" smooth={true} duration={500}>
             Experience
           </Link>
         </li>
-        <li>
+        <li className=" hover:border-b-2 border-pink-600 duration-200">
           <Link to="contact" smooth={true} duration={500}>
             Contact
           </Link>
