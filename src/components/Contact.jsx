@@ -1,4 +1,7 @@
 import React from "react";
+import { BsFillPersonLinesFill } from "react-icons/bs";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { HiOutlineMail } from "react-icons/hi";
 
 function Contact() {
   return (
@@ -51,6 +54,40 @@ function Contact() {
         >
           Contact me
         </button>
+        <div className="md:hidden w-full flex justify-between items-center flex-row mt-5">
+          <a
+            href="https://www.linkedin.com/in/shivakarka"
+            target="_blank"
+            rel="noreferrer"
+            className="w-full text-gray-300"
+          >
+            <FaLinkedin size={30} />
+          </a>
+          <a
+            href="https://github.com/Shivakarka"
+            target="_blank"
+            rel="noreferrer"
+            className=" w-full text-gray-300"
+          >
+            <FaGithub size={30} />
+          </a>
+          <a
+            href="mailto:shivakarka@gmail.com"
+            target="_blank"
+            rel="noreferrer"
+            className=" w-full text-gray-300"
+          >
+            <HiOutlineMail size={30} />
+          </a>
+          <a
+            href="https://drive.google.com/file/d/1FFNTnwHFY0LP5vqODlvNrNKCGHjETQNG/view?usp=sharing"
+            target="_blank"
+            rel="noreferrer"
+            className="  text-gray-300"
+          >
+            <BsFillPersonLinesFill size={30} />
+          </a>
+        </div>
       </form>
     </div>
   );
