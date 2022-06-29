@@ -18,7 +18,7 @@ const About = () => {
           <div></div>
         </div>
         <img
-          className="mt-2 mb-4 rounded-lg"
+          className="hidden sm:block mt-2 mb-4 rounded-lg "
           src={Shiva}
           alt="shiva-pic"
           style={{ width: "300px", height: "350px" }}
