@@ -7,7 +7,7 @@ function Contact() {
   return (
     <div
       name="contact"
-      className="w-screen h-screen bg-[#0a192f] flex justify-center items-center p-4"
+      className="w-full h-screen bg-[#0a192f] flex justify-center items-center p-4"
     >
       <form
         method="POST"
@@ -28,24 +28,24 @@ function Contact() {
           type="text"
           placeholder="Name"
           name="name"
-          // data-aos="fade-left"
-          // data-aos-duration="1000"
+          data-aos="fade-left"
+          data-aos-duration="1000"
         />
         <input
           className="my-4 p-2 bg-[#ccd6f6]"
           type="email"
           placeholder="Email"
           name="email"
-          // data-aos="fade-right"
-          // data-aos-duration="1000"
+          data-aos="fade-right"
+          data-aos-duration="1000"
         />
         <textarea
           className="bg-[#ccd6f6] p-2"
           name="message"
           rows="10"
           placeholder="Message"
-          // data-aos="fade-up"
-          // data-aos-duration="1000"
+          data-aos="fade-up"
+          data-aos-duration="1000"
         ></textarea>
         <button
           className="text-white border-2 hover:bg-pink-600 hover:border-pink-600 px-4 py-3 my-8 mx-auto flex items-center"
