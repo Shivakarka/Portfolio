@@ -16,32 +16,32 @@ function Navbar() {
       </div>
 
       <ul className="hidden md:flex">
-        <li className=" hover:border-b-2 border-pink-600 ">
+        <li className=" shadow hover:shadow-pink-600 ">
           <Link to="home" smooth={true} duration={500}>
             Home
           </Link>
         </li>
-        <li className=" hover:border-b-2 border-pink-600 ">
+        <li className=" shadow hover:shadow-pink-600 ">
           <Link to="about" smooth={true} duration={500}>
             About
           </Link>
         </li>
-        <li className=" hover:border-b-2 border-pink-600 ">
+        <li className=" shadow hover:shadow-pink-600 ">
           <Link to="skills" smooth={true} duration={500}>
             Skills
           </Link>
         </li>
-        <li className=" hover:border-b-2 border-pink-600 ">
+        <li className=" shadow hover:shadow-pink-600 ">
           <Link to="projects" smooth={true} duration={500}>
             Projects
           </Link>
         </li>
-        <li className=" hover:border-b-2 border-pink-600">
+        <li className=" shadow hover:shadow-pink-600">
           <Link to="experience" smooth={true} duration={500}>
             Experience
           </Link>
         </li>
-        <li className=" hover:border-b-2 border-pink-600 duration-200">
+        <li className=" shadow hover:shadow-pink-600">
           <Link to="contact" smooth={true} duration={500}>
             Contact
           </Link>
