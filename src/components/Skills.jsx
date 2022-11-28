@@ -7,6 +7,9 @@ import BootStrap from "../assets/Bootstrap_logo.svg.png";
 import Tailwind from "../assets/tailwind.png";
 import Java from "../assets/java.png";
 import Python from "../assets/python.png";
+import Node from "../assets/Node.js_logo.svg";
+import Expressjs from "../assets/expressjs.svg";
+import MongoDb from "../assets/mongodb.svg";
 
 function Skills() {
   return (
@@ -40,6 +43,26 @@ function Skills() {
           <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
             <img className="w-20 mx-auto" src={ReactImg} alt="React icon" />
             <p className="my-4">REACT</p>
+          </div>
+          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+            <img className="w-20 mx-auto mt-4" src={Node} alt="React icon" />
+            <p className="my-4">Node JS</p>
+          </div>
+          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+            <img
+              className="w-20 mx-auto mt-6 bg-slate-300"
+              src={Expressjs}
+              alt="React icon"
+            />
+            <p className="my-4">Express JS</p>
+          </div>
+          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+            <img
+              className="w-20 mx-auto mt-6 "
+              src={MongoDb}
+              alt="React icon"
+            />
+            <p className="my-4">MongoDB</p>
           </div>
           <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
             <img

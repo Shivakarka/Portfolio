@@ -2,6 +2,8 @@ import React from "react";
 import Tictactoe from "../assets/Tictactoe.png";
 import Ecommerce from "../assets/Ecommerce.png";
 import Moviedb from "../assets/MovieDB.png";
+import Wordle from "../assets/Wordle.png";
+import Stayhealthy from "../assets/Stay-healthy.png";
 
 function Projects() {
   return (
@@ -105,6 +107,71 @@ function Projects() {
                 </a>
                 <a
                   href="https://github.com/Shivakarka/movieDB"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
+                    Code
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+          {/* Grid Item */}
+          <div
+            style={{ backgroundImage: `url(${Wordle})` }}
+            className="shadow-lg shadow-[#040c16] h-44 group container rounded-md flex justify-center items-center mx-auto content-div"
+          >
+            <span className="text-2xl font-bold text-center  text-black pb-28">
+              Wordle
+            </span>
+            {/* Hover Effects */}
+            <div className="opacity-0 group-hover:opacity-100">
+              <div className="pt-8 text-center">
+                <a
+                  href="https://shivakarka-wordle-clone.vercel.app/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
+                    Demo
+                  </button>
+                </a>
+                <a
+                  href="https://github.com/Shivakarka/wordle-clone"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
+                    Code
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          {/* Grid Item */}
+          <div
+            style={{ backgroundImage: `url(${Stayhealthy})` }}
+            className="shadow-lg shadow-[#040c16] h-44 group container rounded-md flex justify-center items-center mx-auto content-div"
+          >
+            {/* Hover Effects */}
+            <div className="opacity-0 group-hover:opacity-100">
+              <div className="pt-8 text-center">
+                <p className="text-2xl font-bold text-center  text-white pb-3 ">
+                  Stay Healthy
+                </p>
+                <a
+                  href="https://stayhealthy-frontend.onrender.com/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
+                    Demo
+                  </button>
+                </a>
+                <a
+                  href="https://github.com/Shivakarka/Stay-Healthy"
                   target="_blank"
                   rel="noreferrer"
                 >
