@@ -31,7 +31,7 @@ function Projects() {
             className="shadow-lg shadow-[#040c16] h-44 group container rounded-md flex justify-center items-center mx-auto content-div"
           >
             {/* Hover Effects */}
-            <div className="opacity-0 group-hover:opacity-100">
+            <div className="opacity-25 group-hover:opacity-100">
               <div className="pt-8 text-center">
                 <a
                   href="https://ecommerce-shivakarka.vercel.app/"
@@ -61,7 +61,7 @@ function Projects() {
             className="shadow-lg shadow-[#040c16] h-44 group container rounded-md flex justify-center items-center mx-auto content-div"
           >
             {/* Hover Effects */}
-            <div className="opacity-0 group-hover:opacity-100">
+            <div className="opacity-25 group-hover:opacity-100">
               <span className="text-2xl font-bold text-white tracking-wider">
                 Tic Tac Toe
               </span>
@@ -94,7 +94,7 @@ function Projects() {
             className="shadow-lg shadow-[#040c16] h-44 group container rounded-md flex justify-center items-center mx-auto content-div"
           >
             {/* Hover Effects */}
-            <div className="opacity-0 group-hover:opacity-100">
+            <div className="opacity-25 group-hover:opacity-100">
               <div className="pt-8 text-center">
                 <a
                   href="https://moviedb-shivakarka.netlify.app"
@@ -126,7 +126,7 @@ function Projects() {
               Wordle
             </span>
             {/* Hover Effects */}
-            <div className="opacity-0 group-hover:opacity-100">
+            <div className="opacity-25 group-hover:opacity-100">
               <div className="pt-8 text-center">
                 <a
                   href="https://shivakarka-wordle-clone.vercel.app/"
@@ -156,7 +156,7 @@ function Projects() {
             className="shadow-lg shadow-[#040c16] h-44 group container rounded-md flex justify-center items-center mx-auto content-div"
           >
             {/* Hover Effects */}
-            <div className="opacity-0 group-hover:opacity-100">
+            <div className="opacity-25 group-hover:opacity-100">
               <div className="pt-8 text-center">
                 <p className="text-2xl font-bold text-center  text-white pb-3 ">
                   Stay Healthy

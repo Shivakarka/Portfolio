@@ -5,22 +5,21 @@ import Home from "./components/Home";
 import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 AOS.init();
 
-
 function App() {
   return (
-    <div className="App">
-       <Navbar/>
-       <Home/>
-       <About/>
-       <Skills/>
-       <Projects/>
-       <Experience/>
-       <Contact/>
+    <div className="App overflow-x-hidden">
+      <Navbar />
+      <Home />
+      <About />
+      <Skills />
+      <Projects />
+      <Experience />
+      <Contact />
     </div>
   );
 }
