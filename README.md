@@ -2,7 +2,7 @@
 
 <br>
 
-Live Link: https://shivakarka.vercel.app/
+Live Link: https://www.shivakarka.me/
 
 <br>
 
