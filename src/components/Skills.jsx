@@ -10,6 +10,7 @@ import Python from "../assets/python.png";
 import Node from "../assets/Node.js_logo.svg";
 import Expressjs from "../assets/expressjs.svg";
 import MongoDb from "../assets/mongodb.svg";
+import Typescript from "../assets/Typescript.png";
 
 function Skills() {
   return (
@@ -86,6 +87,14 @@ function Skills() {
           <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
             <img className="w-10 mx-auto" src={Java} alt="Java icon" />
             <p className="my-4">JAVA</p>
+          </div>
+          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+            <img
+              className="w-10 mx-auto pt-8"
+              src={Typescript}
+              alt="typescript icon"
+            />
+            <p className="my-4">Typescript</p>
           </div>
         </div>
       </div>

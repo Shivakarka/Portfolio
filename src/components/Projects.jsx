@@ -1,9 +1,10 @@
 import React from "react";
 import Tictactoe from "../assets/Tictactoe.png";
-import Ecommerce from "../assets/Ecommerce.png";
+import ProShop from "../assets/ProShop.png";
 import Moviedb from "../assets/MovieDB.png";
 import Wordle from "../assets/Wordle.png";
 import Stayhealthy from "../assets/Stay-healthy.png";
+import Fiverr from "../assets/Fiverr.jpeg";
 
 function Projects() {
   return (
@@ -27,14 +28,14 @@ function Projects() {
         >
           {/* Grid Item */}
           <div
-            style={{ backgroundImage: `url(${Ecommerce})` }}
+            style={{ backgroundImage: `url(${ProShop})` }}
             className="shadow-lg shadow-[#040c16] h-44 group container rounded-md flex justify-center items-center mx-auto content-div"
           >
             {/* Hover Effects */}
             <div className="opacity-25 group-hover:opacity-100">
               <div className="pt-8 text-center">
                 <a
-                  href="https://ecommerce-shivakarka.vercel.app/"
+                  href="https://proshop-yw1a.onrender.com/"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -43,7 +44,7 @@ function Projects() {
                   </button>
                 </a>
                 <a
-                  href="https://github.com/Shivakarka/Ecommerce"
+                  href="https://github.com/Shivakarka/proshop"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -158,9 +159,6 @@ function Projects() {
             {/* Hover Effects */}
             <div className="opacity-25 group-hover:opacity-100">
               <div className="pt-8 text-center">
-                <p className="text-2xl font-bold text-center  text-white pb-3 ">
-                  Stay Healthy
-                </p>
                 <a
                   href="https://stayhealthy-frontend.onrender.com/"
                   target="_blank"
@@ -172,6 +170,36 @@ function Projects() {
                 </a>
                 <a
                   href="https://github.com/Shivakarka/Stay-Healthy"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
+                    Code
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          {/* Grid Item */}
+          <div
+            style={{ backgroundImage: `url(${Fiverr})` }}
+            className="shadow-lg shadow-[#040c16] h-44 group container rounded-md flex justify-center items-center mx-auto content-div"
+          >
+            {/* Hover Effects */}
+            <div className="opacity-25 group-hover:opacity-100">
+              <div className="pt-8 text-center">
+                <a
+                  href="https://fiverr-clone-sk.vercel.app/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
+                    Demo
+                  </button>
+                </a>
+                <a
+                  href="https://github.com/Shivakarka/fiverr"
                   target="_blank"
                   rel="noreferrer"
                 >

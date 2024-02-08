@@ -20,19 +20,26 @@ function Experience() {
           <div></div>
         </div>
         <div className="max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4">
+          <div data-aos="fade-left" data-aos-duration="1000">
+            <p className="sm:text-right text-4xl font-bold">
+              Aapastech Technology Experts
+            </p>
+            <p className="sm:flex justify-end mt-2">SDE</p>
+            <p className="sm:flex justify-end mt-2">Jan 2023- Mar 2023</p>
+          </div>
           <div data-aos="fade-right" data-aos-duration="1000">
             <p className="sm:text-right text-4xl font-bold">
               Cognizant Technology Solutions
             </p>
             <p className="sm:flex justify-end mt-2">Process Specialist</p>
-            <p className="sm:flex justify-end mt-2">2018-2022</p>
+            <p className="sm:flex justify-end mt-2">June 2018 - May 2022</p>
           </div>
           <div data-aos="fade-left" data-aos-duration="1000">
             <p className="sm:text-right text-4xl font-bold">
               Intelenet Global Services
             </p>
             <p className="sm:flex justify-end mt-2">Analyst</p>
-            <p className="sm:flex justify-end mt-2">2016-2018</p>
+            <p className="sm:flex justify-end mt-2">Oct 2016 - May 2018</p>
           </div>
         </div>
       </div>
