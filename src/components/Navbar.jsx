@@ -148,7 +148,7 @@ function Navbar() {
               target="_blank"
               rel="noreferrer"
               className="flex justify-between items-center w-full text-gray-300"
-              href="https://drive.google.com/file/d/1gK6jV6zvV_jZXdDbnO5dOsYKV7SVf8ci/view?usp=sharing"
+              href="https://drive.google.com/file/d/1ftpJug8MFYijicA_Cd_D5XxqaOlPg8tl/view?usp=sharing"
             >
               Resume <BsFillPersonLinesFill size={30} />
             </a>
