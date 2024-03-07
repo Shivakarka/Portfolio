@@ -80,7 +80,7 @@ function Contact() {
             <HiOutlineMail size={30} />
           </a>
           <a
-            href="https://drive.google.com/file/d/1LdfF5dTaQ1qNop3oGGtMYeHMljPs876Q/view?usp=sharing"
+            href="https://drive.google.com/file/d/1ftpJug8MFYijicA_Cd_D5XxqaOlPg8tl/view?usp=sharing"
             target="_blank"
             rel="noreferrer"
             className="  text-gray-300"
