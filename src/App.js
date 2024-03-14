@@ -12,7 +12,7 @@ AOS.init();
 
 function App() {
   return (
-    <div className="App overflow-x-hidden">
+    <div className="App overflow-hidden">
       <Navbar />
       <Home />
       <About />
