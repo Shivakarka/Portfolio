@@ -1,9 +1,9 @@
 import React from "react";
-import Tictactoe from "../assets/Tictactoe.png";
+import Tmdb from "../assets/tmdb.png";
 import ProShop from "../assets/ProShop.png";
-import Moviedb from "../assets/MovieDB.png";
-import Wordle from "../assets/Wordle.png";
-import Stayhealthy from "../assets/Stay-healthy.png";
+import Gamehub from "../assets/gamehub.png";
+import Tomato from "../assets/tomato.png";
+import Linkedin from "../assets/linkedin.png";
 import Fiverr from "../assets/Fiverr.jpeg";
 
 function Projects() {
@@ -58,17 +58,17 @@ function Projects() {
 
           {/* Grid Item */}
           <div
-            style={{ backgroundImage: `url(${Tictactoe})` }}
+            style={{ backgroundImage: `url(${Tmdb})` }}
             className="shadow-lg shadow-[#040c16] h-44 group container rounded-md flex justify-center items-center mx-auto content-div"
           >
             {/* Hover Effects */}
             <div className="opacity-25 group-hover:opacity-100">
               <span className="text-2xl font-bold text-white tracking-wider">
-                Tic Tac Toe
+                TMDB Clone
               </span>
               <div className="pt-4 text-center">
                 <a
-                  href="https://shivakarka-tictactoe.netlify.app/"
+                  href="https://tmdb-clone-sk.vercel.app/"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -77,7 +77,7 @@ function Projects() {
                   </button>
                 </a>
                 <a
-                  href="https://github.com/Shivakarka/tictactoe"
+                  href="https://github.com/Shivakarka/tmdb"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -91,14 +91,14 @@ function Projects() {
 
           {/* Grid Item */}
           <div
-            style={{ backgroundImage: `url(${Moviedb})` }}
+            style={{ backgroundImage: `url(${Gamehub})` }}
             className="shadow-lg shadow-[#040c16] h-44 group container rounded-md flex justify-center items-center mx-auto content-div"
           >
             {/* Hover Effects */}
             <div className="opacity-25 group-hover:opacity-100">
               <div className="pt-8 text-center">
                 <a
-                  href="https://moviedb-shivakarka.netlify.app"
+                  href="https://game-hub-shivakarka.vercel.app/"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -107,7 +107,7 @@ function Projects() {
                   </button>
                 </a>
                 <a
-                  href="https://github.com/Shivakarka/movieDB"
+                  href="https://github.com/Shivakarka/game-hub"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -120,17 +120,14 @@ function Projects() {
           </div>
           {/* Grid Item */}
           <div
-            style={{ backgroundImage: `url(${Wordle})` }}
+            style={{ backgroundImage: `url(${Tomato})` }}
             className="shadow-lg shadow-[#040c16] h-44 group container rounded-md flex justify-center items-center mx-auto content-div"
           >
-            <span className="text-2xl font-bold text-center  text-black pb-28">
-              Wordle
-            </span>
             {/* Hover Effects */}
             <div className="opacity-25 group-hover:opacity-100">
               <div className="pt-8 text-center">
                 <a
-                  href="https://shivakarka-wordle-clone.vercel.app/"
+                  href="https://tomato-food-del.vercel.app/"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -139,7 +136,7 @@ function Projects() {
                   </button>
                 </a>
                 <a
-                  href="https://github.com/Shivakarka/wordle-clone"
+                  href="https://github.com/Shivakarka/tomato_food_del"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -153,14 +150,14 @@ function Projects() {
 
           {/* Grid Item */}
           <div
-            style={{ backgroundImage: `url(${Stayhealthy})` }}
+            style={{ backgroundImage: `url(${Linkedin})` }}
             className="shadow-lg shadow-[#040c16] h-44 group container rounded-md flex justify-center items-center mx-auto content-div"
           >
             {/* Hover Effects */}
             <div className="opacity-25 group-hover:opacity-100">
               <div className="pt-8 text-center">
                 <a
-                  href="https://stayhealthy-frontend.onrender.com/"
+                  href="https://linkedinclone-frontend.vercel.app/"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -169,7 +166,7 @@ function Projects() {
                   </button>
                 </a>
                 <a
-                  href="https://github.com/Shivakarka/Stay-Healthy"
+                  href="https://github.com/Shivakarka/linkedin-clone"
                   target="_blank"
                   rel="noreferrer"
                 >
