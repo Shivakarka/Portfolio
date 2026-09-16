@@ -1,36 +1,66 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Shiva Karka — Portfolio
+
+My personal portfolio website — a modern, dark-themed single-page site showcasing my projects, skills, experience, and certifications.
+
+**Live:** https://www.shivakarka.tech
+
+## About
+
+Full-stack developer based in Hyderabad, India, building fast, scalable web apps with React, Next.js, TypeScript, and Node.js. AWS Certified Cloud Practitioner (CLF-C02).
+
+## Tech Stack
+
+- **Framework:** Next.js 16 (App Router) + TypeScript
+- **Styling:** Tailwind CSS v4
+- **Animation:** Framer Motion
+- **Icons:** Lucide
+- **Fonts:** Inter + Sora (via `next/font`)
+- **Deployment:** Vercel (`main` branch → production)
+
+## Sections
+
+- Hero with photo, stats, and social links
+- About
+- Projects (most recent & biggest builds, all live with source code)
+- Skills (Frontend / Backend / Database & Cloud / Tools)
+- Experience timeline
+- Certifications (AWS CLF-C02 featured)
+- Contact (mailto + click-to-copy email + resume)
+
+## Featured Projects
+
+| Project | Stack | Links |
+|---|---|---|
+| DealDrop — Smart Price Tracker | Next.js 16, Supabase, Firecrawl, Resend | [Demo](https://dealdrop2026.vercel.app/) · [Code](https://github.com/Shivakarka/dealdrop) |
+| LinkedIn Clone | React, TypeScript, Node.js, MongoDB | [Demo](https://linkedinclone-frontend.vercel.app/) · [Code](https://github.com/Shivakarka/linkedin-clone) |
+| Tomato — Food Delivery App | MERN, TypeScript, Stripe | [Demo](https://tomato-food-del.vercel.app/) · [Code](https://github.com/Shivakarka/tomato_food_del) |
+| TMDB Movie Explorer | React 18, TypeScript, React Query | [Demo](https://tmdb-clone-sk.vercel.app/) · [Code](https://github.com/Shivakarka/tmdb) |
+| GameHub | React 18, TypeScript, Chakra UI | [Demo](https://game-hub-shivakarka.vercel.app/) · [Code](https://github.com/Shivakarka/game-hub) |
+| ProShop Ecommerce | MERN, Redux Toolkit | [Demo](https://proshop-yw1a.onrender.com/) · [Code](https://github.com/Shivakarka/proshop) |
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view it locally.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm run build   # production build
+npm start       # serve the production build
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Deployment
 
-## Learn More
+The site is deployed on Vercel with the custom domain **www.shivakarka.tech**:
 
-To learn more about Next.js, take a look at the following resources:
+- Pushes to `main` auto-deploy to production (the live domain).
+- Pushes to feature branches (e.g. `v2-redesign`) get isolated Preview URLs — the live site is never affected until you merge.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Contact
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Email: shivakarka@gmail.com
+- GitHub: https://github.com/Shivakarka
+- LinkedIn: https://www.linkedin.com/in/shivakarka
