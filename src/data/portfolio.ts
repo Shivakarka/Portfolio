@@ -48,6 +48,7 @@ export const projects: Project[] = [
     tech: ["Next.js 16", "TypeScript", "Supabase", "Firecrawl", "Resend", "Tailwind"],
     demo: "https://dealdrop2026.vercel.app/",
     code: "https://github.com/Shivakarka/dealdrop",
+    image: "/projects/dealdrop.png",
     year: "2026",
     featured: true,
   },
