@@ -2,7 +2,7 @@
 
 <br>
 
-Live Link: https://www.shivakarka.me/
+Live Link: https://www.shivakarka.tech/
 
 <br>
 
