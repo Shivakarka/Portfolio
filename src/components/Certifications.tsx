@@ -1,6 +1,32 @@
-import { BadgeCheck } from "lucide-react";
+import { BadgeCheck, Eye } from "lucide-react";
 import { certifications } from "@/data/portfolio";
 import { Reveal, SectionHeading } from "./Reveal";
+
+function ViewCredentialButton({
+  url,
+  light = false,
+}: {
+  url: string;
+  light?: boolean;
+}) {
+  return (
+    <a
+      href={url}
+      target="_blank"
+      rel="noreferrer"
+      aria-label="View certificate"
+      title="View certificate"
+      className={`inline-flex shrink-0 items-center gap-1.5 rounded-full px-3 py-1.5 text-xs font-semibold transition-colors ${
+        light
+          ? "bg-cyan-400 text-slate-950 hover:bg-cyan-300"
+          : "border border-white/15 text-slate-300 hover:border-cyan-400/40 hover:text-cyan-300"
+      }`}
+    >
+      <Eye size={13} />
+      View
+    </a>
+  );
+}
 
 export default function Certifications() {
   const [top, ...rest] = certifications;
@@ -30,9 +56,14 @@ export default function Certifications() {
                   <BadgeCheck size={13} />
                   Newest certification · {top.date}
                 </p>
-                <h3 className="font-display mt-2 text-xl font-bold text-white sm:text-2xl">
-                  {top.title}
-                </h3>
+                <div className="mt-2 flex flex-wrap items-center gap-3">
+                  <h3 className="font-display text-xl font-bold text-white sm:text-2xl">
+                    {top.title}
+                  </h3>
+                  {top.credentialUrl && (
+                    <ViewCredentialButton url={top.credentialUrl} light />
+                  )}
+                </div>
                 <p className="mt-1 text-sm text-slate-400">
                   {top.issuer} — validates cloud concepts, AWS services,
                   security, architecture and pricing.
@@ -49,10 +80,15 @@ export default function Certifications() {
                 <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-indigo-400/10 text-indigo-300">
                   <c.icon size={18} />
                 </div>
-                <div className="min-w-0">
-                  <h3 className="text-sm font-semibold leading-snug text-white">
-                    {c.title}
-                  </h3>
+                <div className="min-w-0 flex-1">
+                  <div className="flex items-start justify-between gap-2">
+                    <h3 className="text-sm font-semibold leading-snug text-white">
+                      {c.title}
+                    </h3>
+                    {c.credentialUrl && (
+                      <ViewCredentialButton url={c.credentialUrl} />
+                    )}
+                  </div>
                   <p className="mt-1 text-xs text-slate-400">
                     {c.issuer} · {c.date}
                   </p>

@@ -202,6 +202,7 @@ export interface Certification {
   date: string;
   icon: LucideIcon;
   featured?: boolean;
+  credentialUrl?: string;
 }
 
 export const certifications: Certification[] = [
@@ -211,30 +212,40 @@ export const certifications: Certification[] = [
     date: "2026",
     icon: Award,
     featured: true,
+    credentialUrl:
+      "https://www.credly.com/badges/f0e230ef-e5b1-44bf-b377-1bee5fa948a1",
   },
   {
     title: "Front-End Web Developer Fellowship",
     issuer: "NextLeap",
     date: "Apr 2024",
     icon: GraduationCap,
+    credentialUrl:
+      "https://assets.nextleap.app/certificate/Cohort-058fc7f776fc241d0a909090ca1d6402fd3bd868.pdf",
   },
   {
     title: "Front End Developer Nanodegree",
     issuer: "Udacity",
     date: "Jun 2023",
     icon: GraduationCap,
+    credentialUrl:
+      "https://www.udacity.com/certificate/e/2c6721ac-c38c-11ed-8a7a-1f855b5ead44",
   },
   {
     title: "Responsive Web Design",
     issuer: "freeCodeCamp",
     date: "Oct 2021",
     icon: GraduationCap,
+    credentialUrl:
+      "https://www.freecodecamp.org/certification/shivakarka/responsive-web-design",
   },
   {
     title: "Google IT Support Professional",
     issuer: "Google",
     date: "Jan 2021",
     icon: Cloud,
+    credentialUrl:
+      "https://www.coursera.org/account/accomplishments/specialization/certificate/L7DUC2HPKTB6",
   },
   {
     title: "B.Tech — Electrical Engineering",
