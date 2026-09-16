@@ -1,0 +1,67 @@
+import { BadgeCheck } from "lucide-react";
+import { certifications } from "@/data/portfolio";
+import { Reveal, SectionHeading } from "./Reveal";
+
+export default function Certifications() {
+  const [top, ...rest] = certifications;
+  return (
+    <section id="certifications" className="scroll-mt-20 py-20 sm:py-28">
+      <div className="mx-auto max-w-6xl px-5 sm:px-8">
+        <SectionHeading
+          eyebrow="Certifications"
+          title="Credentials & education"
+          description="Recently AWS Certified — plus frontend fellowships and a B.Tech foundation."
+        />
+
+        {/* Featured AWS cert */}
+        <Reveal className="mt-10">
+          <div className="relative overflow-hidden rounded-2xl border border-cyan-400/25 bg-gradient-to-br from-cyan-500/15 via-indigo-500/10 to-fuchsia-500/10 p-7 sm:p-9">
+            <div
+              className="absolute -right-20 -top-20 h-64 w-64 rounded-full opacity-30 blur-[80px]"
+              style={{ background: "linear-gradient(140deg,#22d3ee,#818cf8)" }}
+              aria-hidden
+            />
+            <div className="relative flex flex-wrap items-center gap-6">
+              <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-cyan-400 text-slate-950">
+                <top.icon size={30} />
+              </div>
+              <div className="min-w-0 flex-1">
+                <p className="inline-flex items-center gap-1.5 rounded-full bg-cyan-400/15 px-3 py-1 text-xs font-semibold text-cyan-300">
+                  <BadgeCheck size={13} />
+                  Newest certification · {top.date}
+                </p>
+                <h3 className="font-display mt-2 text-xl font-bold text-white sm:text-2xl">
+                  {top.title}
+                </h3>
+                <p className="mt-1 text-sm text-slate-400">
+                  {top.issuer} — validates cloud concepts, AWS services,
+                  security, architecture and pricing.
+                </p>
+              </div>
+            </div>
+          </div>
+        </Reveal>
+
+        <div className="mt-5 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          {rest.map((c, i) => (
+            <Reveal key={c.title} delay={i * 0.06}>
+              <div className="glass flex h-full items-start gap-4 rounded-2xl p-5 transition-colors hover:border-indigo-400/30">
+                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-indigo-400/10 text-indigo-300">
+                  <c.icon size={18} />
+                </div>
+                <div className="min-w-0">
+                  <h3 className="text-sm font-semibold leading-snug text-white">
+                    {c.title}
+                  </h3>
+                  <p className="mt-1 text-xs text-slate-400">
+                    {c.issuer} · {c.date}
+                  </p>
+                </div>
+              </div>
+            </Reveal>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
