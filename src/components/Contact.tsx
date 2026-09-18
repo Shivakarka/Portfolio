@@ -22,7 +22,7 @@ export default function Contact() {
     <section id="contact" className="scroll-mt-20 py-20 sm:py-28">
       <div className="mx-auto max-w-6xl px-5 sm:px-8">
         <Reveal>
-          <div className="relative overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-br from-[#0d1526] to-[#0a0f22] p-8 text-center sm:p-14">
+          <div className="border-gradient relative overflow-hidden p-8 text-center sm:p-14">
             <div
               className="absolute left-1/2 top-0 h-64 w-[560px] -translate-x-1/2 rounded-full opacity-25 blur-[100px]"
               style={{
@@ -46,7 +46,7 @@ export default function Contact() {
               <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
                 <a
                   href={`mailto:${profile.email}`}
-                  className="inline-flex items-center gap-2 rounded-full bg-cyan-400 px-6 py-3 text-sm font-semibold text-slate-950 transition-colors hover:bg-cyan-300"
+                  className="group inline-flex items-center gap-2 rounded-full bg-cyan-400 px-6 py-3 text-sm font-semibold text-slate-950 transition-all hover:bg-cyan-300 hover:shadow-[0_0_30px_-6px_rgba(34,211,238,0.6)]"
                 >
                   <Mail size={16} />
                   Say Hello
@@ -68,7 +68,7 @@ export default function Contact() {
                     target="_blank"
                     rel="noreferrer"
                     aria-label={s.label}
-                    className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 text-slate-400 transition-colors hover:border-cyan-400/40 hover:text-cyan-300"
+                    className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 text-slate-400 transition-all hover:border-cyan-400/40 hover:text-cyan-300 hover:bg-white/5"
                   >
                     <s.icon size={18} />
                   </a>
@@ -77,10 +77,13 @@ export default function Contact() {
                   href={profile.resume}
                   target="_blank"
                   rel="noreferrer"
-                  className="inline-flex h-11 items-center gap-1.5 rounded-full border border-white/10 px-5 text-sm font-semibold text-slate-300 transition-colors hover:border-cyan-400/40 hover:text-cyan-300"
+                  className="group inline-flex h-11 items-center gap-1.5 rounded-full border border-white/10 px-5 text-sm font-semibold text-slate-300 transition-all hover:border-cyan-400/40 hover:text-cyan-300"
                 >
                   Resume
-                  <ArrowUpRight size={15} />
+                  <ArrowUpRight
+                    size={15}
+                    className="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+                  />
                 </a>
               </div>
             </div>

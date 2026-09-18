@@ -42,7 +42,9 @@ export default function Hero() {
           >
             Hi, I&apos;m Shiva Karka.
             <br />
-            <span className="text-gradient">{profile.tagline}</span>
+            <span className="text-gradient animate-shimmer">
+              {profile.tagline}
+            </span>
           </motion.h1>
 
           <motion.p
@@ -64,7 +66,7 @@ export default function Hero() {
           >
             <a
               href="#projects"
-              className="group inline-flex items-center gap-2 rounded-full bg-cyan-400 px-6 py-3 text-sm font-semibold text-slate-950 transition-colors hover:bg-cyan-300"
+              className="group inline-flex items-center gap-2 rounded-full bg-cyan-400 px-6 py-3 text-sm font-semibold text-slate-950 transition-all hover:bg-cyan-300 hover:shadow-[0_0_30px_-6px_rgba(34,211,238,0.6)]"
             >
               View My Work
               <ArrowDown
@@ -76,11 +78,14 @@ export default function Hero() {
               href={profile.resume}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center gap-2 rounded-full border border-white/15 px-6 py-3 text-sm font-semibold text-white transition-colors hover:border-white/30 hover:bg-white/5"
+              className="group inline-flex items-center gap-2 rounded-full border border-white/15 px-6 py-3 text-sm font-semibold text-white transition-all hover:border-white/30 hover:bg-white/5"
             >
               <FileText size={16} />
               Resume
-              <ArrowUpRight size={16} />
+              <ArrowUpRight
+                size={16}
+                className="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+              />
             </a>
           </motion.div>
 
@@ -127,8 +132,8 @@ export default function Hero() {
             }}
             aria-hidden
           />
-          <div className="glass relative overflow-hidden rounded-[24px]">
-            <div className="relative aspect-[3/3.4] w-full">
+          <div className="border-gradient relative overflow-hidden rounded-[24px]">
+            <div className="relative aspect-[3/3.4] w-full overflow-hidden rounded-[24px]">
               <Image
                 src="/shiva.jpg"
                 alt="Shiva Karka"
@@ -136,6 +141,7 @@ export default function Hero() {
                 className="object-cover object-top"
                 priority
               />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0c1322]/60 via-transparent to-transparent" />
             </div>
             <div className="flex items-center justify-between px-5 py-4">
               <div>
@@ -151,11 +157,14 @@ export default function Hero() {
           </div>
 
           {/* Floating badges */}
-          <div className="glass absolute -left-4 top-8 hidden rounded-2xl px-4 py-3 sm:block lg:-left-10">
+          <div className="glass animate-float absolute -left-4 top-8 hidden rounded-2xl px-4 py-3 sm:block lg:-left-10">
             <p className="font-display text-xl font-bold text-white">MERN</p>
             <p className="text-xs text-slate-400">Full-stack apps</p>
           </div>
-          <div className="glass absolute -right-4 bottom-24 hidden rounded-2xl px-4 py-3 sm:block lg:-right-8">
+          <div
+            className="glass animate-float absolute -right-4 bottom-24 hidden rounded-2xl px-4 py-3 sm:block lg:-right-8"
+            style={{ animationDelay: "1.5s" }}
+          >
             <p className="font-display text-xl font-bold text-white">Next.js</p>
             <p className="text-xs text-slate-400">TypeScript builds</p>
           </div>
@@ -164,6 +173,14 @@ export default function Hero() {
 
       {/* Stats strip */}
       <div className="relative border-t border-white/10">
+        <div
+          className="absolute inset-x-0 top-0 h-px"
+          style={{
+            background:
+              "linear-gradient(90deg, transparent, rgba(34,211,238,0.4), rgba(129,140,248,0.4), transparent)",
+          }}
+          aria-hidden
+        />
         <div className="mx-auto grid max-w-6xl grid-cols-3 divide-x divide-white/10 px-5 sm:px-8">
           {profile.stats.map((s) => (
             <div key={s.label} className="px-4 py-6 text-center sm:py-8">

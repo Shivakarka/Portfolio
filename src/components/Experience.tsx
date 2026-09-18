@@ -11,12 +11,21 @@ export default function Experience() {
           title="Where I've worked"
           description="From operations and process excellence into full-time software engineering."
         />
-        <div className="relative mt-12 space-y-8 before:absolute before:bottom-2 before:left-[7px] before:top-2 before:w-px before:bg-white/10 sm:ml-2">
+        <div className="relative mt-12 space-y-8 sm:ml-2">
+          {/* Gradient timeline line */}
+          <div
+            className="absolute bottom-2 left-[7px] top-2 w-px"
+            style={{
+              background:
+                "linear-gradient(180deg, rgba(34,211,238,0.5), rgba(129,140,248,0.3), rgba(232,121,249,0.15))",
+            }}
+            aria-hidden
+          />
           {experience.map((e, i) => (
             <Reveal key={e.company} delay={i * 0.08}>
               <div className="relative pl-10">
-                <span className="absolute left-0 top-1.5 h-[15px] w-[15px] rounded-full border-2 border-cyan-400 bg-[#070b14] ring-4 ring-cyan-400/15" />
-                <div className="glass rounded-2xl p-6">
+                <span className="absolute left-0 top-1.5 h-[15px] w-[15px] rounded-full border-2 border-cyan-400 bg-[#060912] ring-4 ring-cyan-400/15" />
+                <div className="glass glass-hover rounded-2xl p-6">
                   <div className="flex flex-wrap items-start justify-between gap-2">
                     <div>
                       <h3 className="font-display text-lg font-semibold text-white">

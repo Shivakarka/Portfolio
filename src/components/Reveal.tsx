@@ -36,9 +36,12 @@ export function SectionHeading({
 }) {
   return (
     <Reveal className="max-w-2xl">
-      <p className="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-400">
-        {eyebrow}
-      </p>
+      <div className="inline-flex items-center gap-2">
+        <span className="h-px w-6 bg-cyan-400/50" />
+        <p className="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-400">
+          {eyebrow}
+        </p>
+      </div>
       <h2 className="font-display mt-3 text-3xl font-bold tracking-tight text-white sm:text-4xl">
         {title}
       </h2>

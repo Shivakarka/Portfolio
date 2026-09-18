@@ -2,11 +2,22 @@ import { profile, socials } from "@/data/portfolio";
 
 export default function Footer() {
   return (
-    <footer className="border-t border-white/10 py-8">
+    <footer className="relative border-t border-white/10 py-8">
+      <div
+        className="absolute inset-x-0 top-0 h-px"
+        style={{
+          background:
+            "linear-gradient(90deg, transparent, rgba(34,211,238,0.4), rgba(129,140,248,0.3), transparent)",
+        }}
+        aria-hidden
+      />
       <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-5 sm:flex-row sm:px-8">
-        <p className="font-display text-sm font-semibold text-white">
+        <a
+          href="#top"
+          className="font-display text-sm font-semibold text-white transition-opacity hover:opacity-80"
+        >
           shiva<span className="text-cyan-400">.</span>dev
-        </p>
+        </a>
         <p className="text-xs text-slate-500">
           © {new Date().getFullYear()} {profile.name} · Built with Next.js &
           Tailwind CSS
