@@ -21,6 +21,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/",
   },
+  other: {
+    "google-site-verification": "sn2m5jBh49BeRekDBm5I32FtxTmMATPNL6bZqctAUbA",
+  },
   openGraph: {
     title: "Shiva Karka — Full-Stack Developer",
     description:
