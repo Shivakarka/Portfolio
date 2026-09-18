@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Sora } from "next/font/google";
+import { siteUrl } from "@/lib/site";
 import "./globals.css";
 
 const inter = Inter({
@@ -16,15 +17,17 @@ export const metadata: Metadata = {
   title: "Shiva Karka — Full-Stack Developer",
   description:
     "Shiva Karka is a full-stack developer in Hyderabad building fast, scalable web apps with React, Next.js, TypeScript and Node.js. AWS Certified Cloud Practitioner.",
-  metadataBase: new URL("https://www.shivakarka.tech"),
+  metadataBase: new URL(siteUrl),
   alternates: {
-    canonical: "https://www.shivakarka.tech",
+    canonical: "/",
   },
   openGraph: {
     title: "Shiva Karka — Full-Stack Developer",
     description:
       "I build fast, scalable web apps with React, Next.js & Node. AWS Certified Cloud Practitioner.",
     type: "website",
+    url: "/",
+    siteName: "Shiva Karka",
   },
 };
 
