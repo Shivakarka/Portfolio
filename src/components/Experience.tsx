@@ -11,27 +11,18 @@ export default function Experience() {
           title="Where I've worked"
           description="From operations and process excellence into full-time software engineering."
         />
-        <div className="relative mt-12 space-y-8 sm:ml-2">
-          {/* Gradient timeline line */}
-          <div
-            className="absolute bottom-2 left-[7px] top-2 w-px"
-            style={{
-              background:
-                "linear-gradient(180deg, rgba(16,185,129,0.5), rgba(6,182,212,0.3), rgba(245,158,11,0.15))",
-            }}
-            aria-hidden
-          />
+        <div className="relative mt-12 space-y-8 before:absolute before:bottom-2 before:left-[7px] before:top-2 before:w-px before:bg-white/10 sm:ml-2">
           {experience.map((e, i) => (
             <Reveal key={e.company} delay={i * 0.08}>
               <div className="relative pl-10">
-                <span className="absolute left-0 top-1.5 h-[15px] w-[15px] rounded-full border-2 border-emerald-400 bg-[#050810] ring-4 ring-emerald-400/15" />
-                <div className="glass glass-hover rounded-2xl p-6">
+                <span className="absolute left-0 top-1.5 h-[15px] w-[15px] rounded-full border-2 border-cyan-400 bg-[#070b14] ring-4 ring-cyan-400/15" />
+                <div className="glass rounded-2xl p-6">
                   <div className="flex flex-wrap items-start justify-between gap-2">
                     <div>
                       <h3 className="font-display text-lg font-semibold text-white">
                         {e.role}
                       </h3>
-                      <p className="mt-1 text-sm font-medium text-emerald-300">
+                      <p className="mt-1 text-sm font-medium text-cyan-300">
                         {e.company}
                       </p>
                     </div>
@@ -46,7 +37,7 @@ export default function Experience() {
                         key={pt}
                         className="flex items-start gap-2.5 text-sm leading-relaxed text-slate-400"
                       >
-                        <span className="mt-[7px] h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-400" />
+                        <span className="mt-[7px] h-1.5 w-1.5 shrink-0 rounded-full bg-cyan-400" />
                         {pt}
                       </li>
                     ))}
