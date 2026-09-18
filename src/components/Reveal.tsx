@@ -37,8 +37,8 @@ export function SectionHeading({
   return (
     <Reveal className="max-w-2xl">
       <div className="inline-flex items-center gap-2">
-        <span className="h-px w-6 bg-cyan-400/50" />
-        <p className="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-400">
+        <span className="h-px w-6 bg-emerald-400/50" />
+        <p className="text-sm font-semibold uppercase tracking-[0.2em] text-emerald-400">
           {eyebrow}
         </p>
       </div>

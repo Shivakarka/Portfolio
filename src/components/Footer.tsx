@@ -7,7 +7,7 @@ export default function Footer() {
         className="absolute inset-x-0 top-0 h-px"
         style={{
           background:
-            "linear-gradient(90deg, transparent, rgba(34,211,238,0.4), rgba(129,140,248,0.3), transparent)",
+            "linear-gradient(90deg, transparent, rgba(16,185,129,0.4), rgba(6,182,212,0.3), transparent)",
         }}
         aria-hidden
       />
@@ -16,7 +16,7 @@ export default function Footer() {
           href="#top"
           className="font-display text-sm font-semibold text-white transition-opacity hover:opacity-80"
         >
-          shiva<span className="text-cyan-400">.</span>dev
+          shiva<span className="text-emerald-400">.</span>dev
         </a>
         <p className="text-xs text-slate-500">
           © {new Date().getFullYear()} {profile.name} · Built with Next.js &
@@ -30,7 +30,7 @@ export default function Footer() {
               target="_blank"
               rel="noreferrer"
               aria-label={s.label}
-              className="text-slate-500 transition-colors hover:text-cyan-300"
+              className="text-slate-500 transition-colors hover:text-emerald-300"
             >
               <s.icon size={17} />
             </a>

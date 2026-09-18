@@ -6,6 +6,7 @@ import {
   Database,
   GraduationCap,
   Mail,
+  PenTool,
   Server,
   Wrench,
   type LucideIcon,
@@ -29,6 +30,44 @@ export const profile = {
   ],
 };
 
+export interface Service {
+  icon: LucideIcon;
+  title: string;
+  description: string;
+  features: string[];
+}
+
+export const services: Service[] = [
+  {
+    icon: Code2,
+    title: "Web Application Development",
+    description:
+      "End-to-end web apps with React, Next.js, and TypeScript — from architecture to deployment.",
+    features: ["React & Next.js", "TypeScript", "REST & GraphQL APIs", "Realtime features"],
+  },
+  {
+    icon: Server,
+    title: "Backend & API Engineering",
+    description:
+      "Robust server-side systems with Node.js, Express, and Supabase — built for scale and security.",
+    features: ["Node.js & Express", "JWT & OAuth auth", "Database design", "Serverless functions"],
+  },
+  {
+    icon: Cloud,
+    title: "Cloud & DevOps",
+    description:
+      "AWS-certified cloud deployments with CI/CD pipelines, monitoring, and infrastructure as code.",
+    features: ["AWS (CLF-C02)", "Vercel & Supabase", "CI/CD pipelines", "Docker basics"],
+  },
+  {
+    icon: PenTool,
+    title: "UI/UX Implementation",
+    description:
+      "Pixel-perfect, responsive interfaces with Tailwind CSS — accessible and performant by default.",
+    features: ["Tailwind CSS", "Responsive design", "Figma to code", "Design systems"],
+  },
+];
+
 export interface Project {
   title: string;
   description: string;
@@ -38,6 +77,7 @@ export interface Project {
   image?: string;
   featured?: boolean;
   year: string;
+  category: string;
 }
 
 export const projects: Project[] = [
@@ -51,6 +91,7 @@ export const projects: Project[] = [
     image: "/projects/dealdrop.png",
     year: "2026",
     featured: true,
+    category: "Full-Stack",
   },
   {
     title: "LinkedIn Clone",
@@ -61,6 +102,7 @@ export const projects: Project[] = [
     code: "https://github.com/Shivakarka/linkedin-clone",
     image: "/projects/linkedin-full.png",
     year: "2025",
+    category: "Full-Stack",
   },
   {
     title: "Tomato — Food Delivery App",
@@ -71,6 +113,7 @@ export const projects: Project[] = [
     code: "https://github.com/Shivakarka/tomato_food_del",
     image: "/projects/tomato.png",
     year: "2025",
+    category: "Full-Stack",
   },
   {
     title: "TMDB Movie Explorer",
@@ -81,6 +124,7 @@ export const projects: Project[] = [
     code: "https://github.com/Shivakarka/tmdb",
     image: "/projects/tmdb.png",
     year: "2024",
+    category: "Frontend",
   },
   {
     title: "GameHub",
@@ -91,6 +135,7 @@ export const projects: Project[] = [
     code: "https://github.com/Shivakarka/game-hub",
     image: "/projects/gamehub.png",
     year: "2024",
+    category: "Frontend",
   },
   {
     title: "ProShop Ecommerce",
@@ -101,6 +146,7 @@ export const projects: Project[] = [
     code: "https://github.com/Shivakarka/proshop",
     image: "/projects/ProShop.png",
     year: "2023",
+    category: "Full-Stack",
   },
 ];
 

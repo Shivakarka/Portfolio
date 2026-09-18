@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 
 const links = [
   { label: "About", href: "#about" },
-  { label: "Projects", href: "#projects" },
+  { label: "Work", href: "#projects" },
   { label: "Skills", href: "#skills" },
   { label: "Experience", href: "#experience" },
   { label: "Certifications", href: "#certifications" },
@@ -46,7 +46,7 @@ export default function Navbar() {
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "border-b border-white/10 bg-[#060912]/85 backdrop-blur-xl"
+          ? "border-b border-white/10 bg-[#050810]/85 backdrop-blur-xl"
           : "bg-transparent"
       }`}
     >
@@ -55,7 +55,7 @@ export default function Navbar() {
           href="#top"
           className="font-display text-lg font-bold tracking-tight text-white transition-opacity hover:opacity-80"
         >
-          shiva<span className="text-cyan-400">.</span>dev
+          shiva<span className="text-emerald-400">.</span>dev
         </a>
 
         <ul className="hidden items-center gap-1 md:flex">
@@ -83,7 +83,7 @@ export default function Navbar() {
           <li className="ml-3">
             <a
               href="#contact"
-              className="rounded-full bg-cyan-400 px-4 py-2 text-sm font-semibold text-slate-950 transition-all hover:bg-cyan-300 hover:shadow-[0_0_24px_-6px_rgba(34,211,238,0.6)]"
+              className="rounded-full bg-emerald-500 px-4 py-2 text-sm font-semibold text-slate-950 transition-all hover:bg-emerald-400 hover:shadow-[0_0_24px_-6px_rgba(16,185,129,0.6)]"
             >
               Hire Me
             </a>
@@ -106,7 +106,7 @@ export default function Navbar() {
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.25 }}
-            className="overflow-hidden border-b border-white/10 bg-[#060912]/95 backdrop-blur-xl md:hidden"
+            className="overflow-hidden border-b border-white/10 bg-[#050810]/95 backdrop-blur-xl md:hidden"
           >
             <ul className="space-y-1 px-5 py-4">
               {links.map((l) => (
@@ -128,7 +128,7 @@ export default function Navbar() {
                 <a
                   href="#contact"
                   onClick={() => setOpen(false)}
-                  className="mt-2 block rounded-lg bg-cyan-400 px-3 py-2.5 text-center text-sm font-semibold text-slate-950"
+                  className="mt-2 block rounded-lg bg-emerald-500 px-3 py-2.5 text-center text-sm font-semibold text-slate-950"
                 >
                   Hire Me
                 </a>
